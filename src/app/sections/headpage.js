@@ -7,6 +7,7 @@ import TypingText from '../components/TypingText';
 import LogoCard from '../components/card';
 import { PathSvg } from '../components/pathsvg';
 import { motion, useScroll } from "framer-motion"
+import Nav from '../components/navbar';
 
 
 const navigation = [
@@ -24,6 +25,7 @@ export default function Example() {
     <>
     <motion.div style={{ scaleX: scrollYProgress }} className='fixed inset-x-0 top-0 bg-green-500 h-2 origin-left ' />  
     <div className="bg-white">
+      <Nav/>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
