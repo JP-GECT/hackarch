@@ -4,10 +4,11 @@ import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 export default function Nav() {
     const navigation = [
-        { name: 'Product', href: '#' },
-        { name: 'Features', href: '#' },
-        { name: 'Marketplace', href: '#' },
-        { name: 'Company', href: '#' },
+        { name: 'Tracks', href: '#' },
+        { name: 'Pre-Events', href: '#' },
+        { name: 'Hack@Arch1.0', href: '#' },
+        { name: 'TimeLine', href: '#' }
+
       ]
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
@@ -40,6 +41,11 @@ export default function Nav() {
                 {item.name}
               </a>
             ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" className="text-sm font-semibold leading-6 text-[#ee7569]">
+              Register<span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -75,6 +81,14 @@ export default function Nav() {
                       {item.name}
                     </a>
                   ))}
+                </div>
+                <div className="py-6">
+                  <a
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Registration
+                  </a>
                 </div>
               </div>
             </div>

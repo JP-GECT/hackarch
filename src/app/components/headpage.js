@@ -10,10 +10,10 @@ import { motion, useScroll } from "framer-motion"
 import Nav from './navbar';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Timeline', href: '#' },
+  { name: 'PreEvent', href: '#' },
+  { name: 'Hack@Arch', href: '#' },
 ]
 
 export default function Example() {
