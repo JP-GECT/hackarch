@@ -120,7 +120,7 @@ export default function Example() {
             }}
           />
         </div>
-        <div className="mx-auto flex items-center  flex-col justify-center max-w-2xl py-32 sm:py-48 lg:py-26">
+        <div className="mx-auto flex items-center h-screen  flex-col justify-center max-w-2xl py-32 sm:py-48 lg:py-26">
             {/* this is the center portion**************************************************************************************************/}
          {/* <div>
 
