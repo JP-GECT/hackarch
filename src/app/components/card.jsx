@@ -5,7 +5,7 @@ import { motion, useAnimation, transform } from "framer-motion";
 const normalShadow = "0px 0px 30px rgba(0, 0, 0, 0.2)";
 
 const style = {
-  backgroundImage:"url(https://cdn.glitch.me/071e5391-90f7-476b-b96c-1f51f7106b0c/video-cover-new.png)",
+  backgroundImage:"/logo2.png",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -33,7 +33,7 @@ function LogoCard() {
       const shadowy = transform(offsetY, [-250, 0, 250], [25, 0, -25]);
 
       anim.start({
-        rotateX: -offsetY / 12,
+        rotateX: -offsetY / 24,
         rotateY: offsetX / 12,
         scale: 1.2,
         boxShadow: `${shadowx}px ${shadowy}px 40px rgba(0,0,0,0.5)`,
@@ -77,7 +77,8 @@ function LogoCard() {
         center={true}
         width={cardWidth}
         height={cardHeight}
-        background="transparent"
+        
+        background-color="#ee7569"
       />
      
       
