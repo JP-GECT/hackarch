@@ -4,8 +4,8 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import TypingImage from '../components/TypingImage';
 import TypingText from '../components/TypingText';
-import LogoCard from './card';
-import { PathSvg } from './pathsvg';
+import LogoCard from '../components/card';
+import { PathSvg } from '../components/pathsvg';
 import { motion, useScroll } from "framer-motion"
 
 
