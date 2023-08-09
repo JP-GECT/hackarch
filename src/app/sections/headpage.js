@@ -21,7 +21,7 @@ export default function Example() {
 
   return (
     <>
-    <motion.div style={{ scaleX: scrollYProgress }} className='fixed inset-x-0 top-0 bg-green-500 h-2 origin-left ' />  
+    <motion.div style={{ scaleX: scrollYProgress }} className='fixed inset-x-0 top-0 bg-red-500 h-2 origin-left ' />  
     <div className="bg-white">
 
       <div className="relative isolate px-6 pt-0 lg:px-8">

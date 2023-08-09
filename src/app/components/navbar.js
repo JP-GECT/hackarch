@@ -14,7 +14,7 @@ export default function Nav() {
     return (
         <>
         <nav className=" flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-3">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
@@ -41,6 +41,13 @@ export default function Nav() {
                 {item.name}
               </a>
             ))}
+          </div>
+          <div className="hidden lg:flex">
+            <a href="#"  className="text-sm font-semibold leading-6 text-[#ee7569]">
+          
+                Register Now
+       
+            </a>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
