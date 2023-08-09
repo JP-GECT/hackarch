@@ -4,15 +4,16 @@ import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 export default function Nav() {
     const navigation = [
-        { name: 'Product', href: '#' },
-        { name: 'Features', href: '#' },
-        { name: 'Marketplace', href: '#' },
-        { name: 'Company', href: '#' },
+        { name: 'Home', href: '#' },
+        { name: 'Timeline', href: '#' },
+        { name: 'TimeLine', href: '#' },
+        { name: 'Hack@Arch1.0', href: '#' }
+
       ]
       const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav className=" flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -26,8 +27,9 @@ export default function Nav() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#ee7569]"
-              onClick={() => setMobileMenuOpen(true)}
+              className="z-50 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#ee7569]"
+              onClick={() => {setMobileMenuOpen(true);
+            console.log("robin");}}
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -80,7 +82,7 @@ export default function Nav() {
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Log in
+                    Registration
                   </a>
                 </div>
               </div>
